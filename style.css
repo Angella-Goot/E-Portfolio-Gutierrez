@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+#nav__logo {
+    width: 100%;
+    max-width: 100px
+}
+
+.nav__link--list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav__link--anchor {
+    color: #000;
+    text-decoration: none;
+    
+}
