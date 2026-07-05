@@ -13,7 +13,7 @@
   <script type="text/javascript">
     (function(){
         emailjs.init({
-          publicKey: "3LSqfaX-jjKMHDjVX",
+          publicKey: "hE3oyvOEhYM4R9MXG", 
         });
     })();
   </script>
@@ -121,20 +121,20 @@
             Let's have a chat!
           </h3>
           <h4 class="modal__subtitle modal__subtitle--contact">
-            I'm currently open to new opportunities.
+            <i>I'm currently open to new opportunities.</i>
           </h4>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label" for="name">Name</label>
-              <input class="input" name="user_name" type="text" id="name" required>
+              <input class="input" name="user_name" type="text" id="name">
             </div>
             <div class="form__item">
               <label class="form__item--label" for="email">Email</label>
-              <input class="input" name="user_email" type="email" id="email" required>
+              <input class="input" name="user_email" type="email" id="email">
             </div>
             <div class="form__item">
               <label class="form__item--label" for="message">Message</label>
-              <textarea rows="4" class="input" name="message" type="text"  id="message" required></textarea>
+              <textarea rows="4" class="input" name="message" type="text"  id="message"></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send!
@@ -144,7 +144,7 @@
             <i class="fa-solid fa-spinner"></i>
           </div>
           <div class="modal__overlay modal__overlay--success">
-            Thanks for the message! Looking foward to speaking to you soon.
+            Thanks for your message! Looking foward to speaking with you soon.
           </div>
         </div>
         <i class="fas fa-times modal__exit click"></i>
