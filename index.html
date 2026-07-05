@@ -1,261 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angella Gutierrez</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <script src="https://kit.fontawesome.com/117076c63f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angella Gutierrez</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="https://kit.fontawesome.com/117076c63f.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "3LSqfaX-jjKMHDjVX",
+        });
+    })();
+  </script>
 </head>
 <body>
-    <section id="landing-page">
-        <nav>
-            <figure>
-                <img src="assets/AG-logo.png" alt="Logo" id="logo">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                  <a href="#" class="  //link contact pop-up when created
-                    nav__link--anchor 
-                    link__hover-effect 
-                    link__hover-effect--black
-                  ">About</a>
-                </li>
-                <li class="nav__link">
-                  <a href="#projects" class="
-                    nav__link--anchor 
-                    link__hover-effect 
-                    link__hover-effect--black
-                  ">Projects</a>
-                </li>
-                <li class="nav__link">
-                  <a href="#" class="  //link contact pop-up when created
-                    nav__link--anchor 
-                    link__hover-effect 
-                    link__hover-effect--black
-                  ">Contact</a>
-                </li>
-                <li class="nav__link click">
-                  <a href="#" class="  //link contact pop-up when created
-                    nav__link--anchor 
-                    link__hover-effect 
-                    link__hover-effect--black
-                  "><i class="fa-solid fa-circle-half-stroke"></i></a>
-                </li>
-            </ul>
-        </nav>
-        <header>
-          <div class="header-content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title pink">I'm Angella.</h1>
-            <p class="header__para">I'm a <b class="pink">Junior Frontend Software Engineer</b> 
-               with a passion for creating engaging user experiences. I strive to create solutions 
-               that are both functional and delightful, ensuring positive outcomes for all users. 
-               <br> Here's more <b class="pink">about me.</b></p>
-          </div>
-          <div class="social__list">
-            <a href="#" target="_blank" class="social__link click">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" target="_blank" class="social__link click">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" target="_blank" class="social__link click">
-              <i class="fa-regular fa-file-pdf"></i>
-            </a>
-          </div>
-        </header>
-        <button class="mail__btn click">
-          <i class="fa-solid fa-envelope"></i>
-        </button>
-        <a href="#projects" class="scroll">
-          <div class="scroll__icon click"></div>
-        </a>
-        <div class="modal">
-          <div class="modal__half modal__about">
-            <h3 class="modal__title modal__title--about">
-              Here's more about me.
-            </h3>
-            <h4 class="modal__subtitle modal__subtitle--about">
-              <i>Angella Gutierrez <br> Frontend Software Engineer</i>
-            </h4>
-            <p class="modal__para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam praesentium ipsam.
-              Doloribus asperiores, maiores ipsa iusto.
-              <br>
-              Amet perferendis distinctio consectetur quia rem,
-              fugit aliquid obcaecati eligendi aut sapiente aspernatur!
-            </p>
-            <div class="modal__languages">
-              <figure class="modal__language">
-                <img src="assets/html-5-logo.png" alt="HTML logo" class="modal__language--img">
-                <span class="language__name">HTML</span>
-              </figure>
-              <figure class="modal__language">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="HTML logo" class="modal__language--img">
-                <span class="language__name">CSS</span>
-              </figure>
-              <figure class="modal__language">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="HTML logo" class="modal__language--img">
-                <span class="language__name">JavaScript</span>
-              </figure>
-              <figure class="modal__language">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="HTML logo" class="modal__language--img">
-                <span class="language__name">React</span>
-              </figure>
-            </div>
-          </div>
-          <div class="modal__half modal__contact">
-            <h3 class="modal__title modal__title--contact">
-              Let's have a chat!
-            </h3>
-            <h4 class="modal__subtitle modal__subtitle--contact">
-              I'm currently open to new opportunities.
-            </h4>
-            <form id="contact__form" action="">
-              <div class="form__item">
-                <label class="form__item--label" for="name">Name</label>
-                <input class="input" name="user__name" type="text" id="name" required>
-              </div>
-              <div class="form__item">
-                <label class="form__item--label" for="email">Email</label>
-                <input class="input" name="user__email" type="email" id="email" required>
-              </div>
-              <div class="form__item">
-                <label class="form__item--label" for="message">Message</label>
-                <textarea rows="4" class="input" name="message" type="text"  id="message" required></textarea>
-              </div>
-              <button id="contact__submit" class="form__submit">
-                Send!
-              </button>
-            </form>
-            <div class="modal__overlay modal__overlay--loading">
-              <i class="fa-solid fa-spinner"></i>
-            </div>
-            <div class="modal__overlay modal__overlay--success">
-              Thanks for the message! Looking foward to speaking to you soon.
-            </div>
-          </div>
-          <i class="fas fa-times modal__exit click"></i>
-        </div>
-    </section>
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            Here are some of my <span class="pink">projects</span>
-          </h1>
-          <ul class="project__list">
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Holy Traditions Piercing & Tattoo Studio
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
-                <div class="project__wrapper--bg"></div> 
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    TBD
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
-                <div class="project__wrapper--bg"></div> 
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    TBD
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
-                    nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" target="_blank" class="project__description--link">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+  <section id="landing-page">
+      <nav>
+          <figure>
+              <img src="assets/AG-logo.png" alt="Logo" id="logo">
+          </figure>
+          <ul class="nav__link--list">
+              <li class="nav__link">
+                <a href="#" class="  //link contact pop-up when created
+                  nav__link--anchor 
+                  link__hover-effect 
+                  link__hover-effect--black
+                ">About</a>
+              </li>
+              <li class="nav__link">
+                <a href="#projects" class="
+                  nav__link--anchor 
+                  link__hover-effect 
+                  link__hover-effect--black
+                ">Projects</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="  //link contact pop-up when created
+                  nav__link--anchor 
+                  link__hover-effect 
+                  link__hover-effect--black
+                ">Contact</a>
+              </li>
+              <li class="nav__link click">
+                <a href="#" class="  //link contact pop-up when created
+                  nav__link--anchor 
+                  link__hover-effect 
+                  link__hover-effect--black
+                "><i class="fa-solid fa-circle-half-stroke"></i></a>
+              </li>
           </ul>
+      </nav>
+      <header>
+        <div class="header-content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title pink">I'm Angella.</h1>
+          <p class="header__para">I'm a <b class="pink">Junior Frontend Software Engineer</b> 
+              with a passion for creating engaging user experiences. I strive to create solutions 
+              that are both functional and delightful, ensuring positive outcomes for all users. 
+              <br> Here's more <b class="pink">about me.</b></p>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container footer__container">
-        <figure>
-          <img src="assets/AG-logo.png" alt="logo" id="logo">
-        </figure>
-        <div class="footer__social--list">
-          <a href="#" target="_blank" class="
-            footer__social--link
-            link__hover-effect"
-          >
-          GitHub</a>
-          <a href="#" target="_blank" class="
-            footer__social--link
-            link__hover-effect"
-          >
-          LinkedIn</a>
-          <a href="#" target="_blank" class="
-            footer__social--link
-            link__hover-effect"
-          >
-          Resume</a>
+        <div class="social__list">
+          <a href="#" target="_blank" class="social__link click">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" class="social__link click">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" target="_blank" class="social__link click">
+            <i class="fa-regular fa-file-pdf"></i>
+          </a>
         </div>
-        <div class="footer__copyright">Copyright © 2026 Angella Gutierrez</div>
+      </header>
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's more about me.
+          </h3>
+          <h4 class="modal__subtitle modal__subtitle--about">
+            <i>Angella Gutierrez <br> Frontend Software Engineer</i>
+          </h4>
+          <p class="modal__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam praesentium ipsam.
+            Doloribus asperiores, maiores ipsa iusto.
+            <br>
+            Amet perferendis distinctio consectetur quia rem,
+            fugit aliquid obcaecati eligendi aut sapiente aspernatur!
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img src="assets/html-5-logo.png" alt="HTML logo" class="modal__language--img">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="HTML logo" class="modal__language--img">
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="HTML logo" class="modal__language--img">
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="HTML logo" class="modal__language--img">
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h4 class="modal__subtitle modal__subtitle--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label" for="name">Name</label>
+              <input class="input" name="user_name" type="text" id="name" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label" for="email">Email</label>
+              <input class="input" name="user_email" type="email" id="email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label" for="message">Message</label>
+              <textarea rows="4" class="input" name="message" type="text"  id="message" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking foward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
       </div>
-    </footer>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="pink">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Holy Traditions Piercing & Tattoo Studio
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
+              <div class="project__wrapper--bg"></div> 
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  TBD
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" class="project__img"alt="Holy Traditons">
+              <div class="project__wrapper--bg"></div> 
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  TBD
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nunc ut laoreet tincidunt, 
+                  nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" class="project__description--link">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer__container">
+      <figure>
+        <img src="assets/AG-logo.png" alt="logo" id="logo">
+      </figure>
+      <div class="footer__social--list">
+        <a href="#" target="_blank" class="
+          footer__social--link
+          link__hover-effect"
+        >
+        GitHub</a>
+        <a href="#" target="_blank" class="
+          footer__social--link
+          link__hover-effect"
+        >
+        LinkedIn</a>
+        <a href="#" target="_blank" class="
+          footer__social--link
+          link__hover-effect"
+        >
+        Resume</a>
+      </div>
+      <div class="footer__copyright">Copyright © 2026 Angella Gutierrez</div>
+    </div>
+  </footer>
 </body>
 </html>
