@@ -25,8 +25,8 @@
               <img src="assets/AG-logo.png" alt="Logo" id="logo">
           </figure>
           <ul class="nav__link--list">
-              <li class="nav__link">
-                <a href="#" class="  //link contact pop-up when created
+              <li class="nav__link" onclick="toggleModal()">
+                <a href="#" class="  
                   nav__link--anchor 
                   link__hover-effect 
                   link__hover-effect--black
@@ -39,15 +39,15 @@
                   link__hover-effect--black
                 ">Projects</a>
               </li>
-              <li class="nav__link">
-                <a href="#" class="  //link contact pop-up when created
+              <li class="nav__link" onclick="toggleModal()">
+                <a href="#" class="  
                   nav__link--anchor 
                   link__hover-effect 
                   link__hover-effect--black
                 ">Contact</a>
               </li>
               <li class="nav__link click">
-                <a href="#" class="  //link contact pop-up when created
+                <a href="#" class="  
                   nav__link--anchor 
                   link__hover-effect 
                   link__hover-effect--black
@@ -62,7 +62,7 @@
           <p class="header__para">I'm a <b class="pink">Junior Frontend Software Engineer</b> 
               with a passion for creating engaging user experiences. I strive to create solutions 
               that are both functional and delightful, ensuring positive outcomes for all users. 
-              <br> Here's more <b class="pink">about me.</b></p>
+              <br> Here's more <b class="pink click" onclick="toggleModal()">about me.</b></p>
         </div>
         <div class="social__list">
           <a href="#" target="_blank" class="social__link click">
@@ -76,7 +76,7 @@
           </a>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -117,6 +117,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -147,7 +148,6 @@
             Thanks for your message! Looking foward to speaking with you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
   </section>
   <section id="projects">
